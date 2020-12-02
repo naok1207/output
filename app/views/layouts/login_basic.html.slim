@@ -9,10 +9,11 @@ html
     = stylesheet_pack_tag 'application', media: 'all'
     = javascript_pack_tag 'application'
   body
-    .wrapper.container-fluid
-      .row
-        nav.sidebar.bg-dark.min-vh-100.pt-2
-          = render "shared/sidebar"
-        .main.col.position-relative
-          = render "shared/header"
-          = yield
+    .wrapper
+      .d-flex.align-items-center.vh-100
+        .container
+          .row.justify-content-center
+            .col-sm-6
+              .card.p-5.mb-5
+                .card-body
+                  = yield
