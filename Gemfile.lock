@@ -60,6 +60,7 @@ GEM
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 14.0)
     ast (2.4.1)
+    bcrypt (3.1.16)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -118,6 +119,9 @@ GEM
       dry-initializer (~> 3.0)
       dry-schema (~> 1.5, >= 1.5.2)
     erubi (1.10.0)
+    faraday (1.1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords
     ffi (1.13.1)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
@@ -127,6 +131,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+    jwt (2.2.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -144,10 +149,23 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.14.2)
     msgpack (1.3.3)
+    multi_json (1.15.0)
+    multi_xml (0.6.0)
+    multipart-post (2.1.1)
     mysql2 (0.5.3)
     nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+<<<<<<< HEAD
+=======
+    oauth (0.5.4)
+    oauth2 (1.4.4)
+      faraday (>= 0.8, < 2.0)
+      jwt (>= 1.0, < 3.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
+>>>>>>> 77180a828c00f71ba4bdf4cb72d1a9634fe24ae4
     parallel (1.20.1)
     parser (2.7.2.0)
       ast (~> 2.4.1)
@@ -231,6 +249,10 @@ GEM
     rubocop-ast (1.3.0)
       parser (>= 2.7.1.5)
     ruby-progressbar (1.10.1)
+<<<<<<< HEAD
+=======
+    ruby2_keywords (0.0.2)
+>>>>>>> 77180a828c00f71ba4bdf4cb72d1a9634fe24ae4
     ruby_dep (1.5.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -249,6 +271,10 @@ GEM
       actionpack (>= 3.1)
       railties (>= 3.1)
       slim (>= 3.0, < 5.0)
+    sorcery (0.15.0)
+      bcrypt (~> 3.1)
+      oauth (~> 0.4, >= 0.4.4)
+      oauth2 (~> 1.0, >= 0.8.0)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -304,6 +330,7 @@ DEPENDENCIES
   rubocop
   sass-rails (>= 6)
   slim-rails
+  sorcery
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
