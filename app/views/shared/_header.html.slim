@@ -1,0 +1,25 @@
+nav.navbar.navbar-expand.fixed-top.position-absolute.shadow-none
+  .container-fluid
+    .d-flex.justify-content-end.w-100
+      form.navbar-form
+        span.bmd-form-group
+          .input-group
+            input.form-control.shadow-none type="text" placeholder="Search..."
+            button type="submit" class="btn btn-white btn-roundth-just-icon"
+              = icon "fas", "search"
+      ul.navbar-nav
+        li.nav-item
+          .dropdown
+            a.nav-link href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              span.badge.badge-danger.navbar-badge.position-absolute.rounded-circle style='top: 0; right:0;'
+                | 5
+              = icon "fas", "bell", class: "fa-fw"
+        li.nav-item
+          .dropdown
+            a.nav-link href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              = icon "fas", "user", class: "fa-fw"
+            .dropdown-menu.dropdown-menu-right aria-labelledby="navbarDropdownProfile"
+              = link_to "Profile", "#", class: "dropdown-item"
+              = link_to "Settings", "#", class: "dropdown-item"
+              .dropdown-divider
+              = link_to "Log out", logout_path, method: :delete, class: "dropdown-item"
